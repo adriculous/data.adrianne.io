@@ -2,7 +2,7 @@
 title: "Rebuilding My Data Analytics Portfolio"
 date: 2025-09-30
 description: "Why I decided to move my data analytics portfolio into its own space, and plans to convert the main domain into a portfolio hub."
-image: /images/bunny-placeholder.png
+image: /images/blog/home-sweet-home.png
 tags: ["portfolio", "data analytics", "prompted by adrianne", "career"]
 ---
 

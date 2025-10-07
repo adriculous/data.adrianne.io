@@ -10,6 +10,7 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ## V.1.0.1 - 2025.10.06
 - Fixed the URL for the `CHANGELOG` on the sidebar footer.
+- Added a featured image in the blog post **Rebuilding My Data Analytics Portfolio**.
 
 ---
 
