@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="max-w-3xl p-6 mx-auto prose prose-zinc dark:prose-invert">
+  {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="w-full mb-6 rounded-lg"/>
+  {{ else }}
+    <img src="/images/bunny-placeholder.png" alt="Placeholder image" class="w-full mb-6 rounded-lg"/>
+  {{ end }}
+  <header class="mb-6">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="mt-2 text-zinc-600 dark:text-zinc-400">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="prose max-w-none blog-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

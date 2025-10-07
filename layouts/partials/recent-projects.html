@@ -1,0 +1,38 @@
+<!-- Recent Projects Gallery -->
+<section class="section-lavender">
+  <!-- Section Title -->
+  <h2 class="section-title">
+    Recent Projects
+  </h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-tabs">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cleaning">Cleaning</button>
+    <button class="filter-btn" data-filter="visuals">Visuals</button>
+    <button class="filter-btn" data-filter="capstone">Capstones</button>
+  </div>
+
+  <!-- Project Grid -->
+  <div class="grid w-full gap-6 px-6 md:grid-cols-2 lg:grid-cols-3">
+    {{ range first 6 (where .Site.RegularPages "Section" "work") }}
+      <div class="overflow-hidden bg-white rounded-lg shadow-md project-card" data-category="{{ .Params.category }}">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="object-cover w-full h-48">
+        {{ end }}
+        <div class="p-4">
+          <h3 class="mb-2 text-lg font-semibold text-purple-700">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          <p class="mb-4 text-gray-700">{{ .Description }}</p>
+          <a href="{{ .RelPermalink }}" class="text-purple-600 hover:underline">View case study →</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- More Projects Button -->
+  <div class="mt-8 text-center">
+    <a href="/work" class=" more-projects-btn">More Projects →</a>
+  </div>
+</section>

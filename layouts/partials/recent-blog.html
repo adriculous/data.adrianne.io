@@ -1,0 +1,30 @@
+<!-- Recent Blog Section -->
+<section class="section-blue">
+  <!-- Section Title -->
+  <h2 class="section-title">
+    Recent Blog Posts
+  </h2>
+
+  <!-- Blog Grid -->
+  <div class="grid w-full gap-6 px-6 md:grid-cols-2 lg:grid-cols-3">
+    {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+      <div class="overflow-hidden bg-white rounded-lg shadow-md">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="object-cover w-full h-48">
+        {{ end }}
+        <div class="p-4">
+          <h3 class="mb-2 text-lg font-semibold text-blue-700">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+            <p class="mb-4 text-gray-700">{{ .Params.description }}</p>
+          <a href="{{ .RelPermalink }}" class="text-blue-600 hover:underline">Read more →</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- More Blogs Button -->
+   <div class="mt-8 text-center">
+    <a href="/blog" class="more-blogs-btn">More Blog Posts →</a>
+   </div>
+</section>

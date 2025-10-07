@@ -1,0 +1,37 @@
+baseURL = "https://data.adrianne.io/"
+languageCode = "en-us"
+title = "patterned.by.adrianne"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+    [markup.goldmark.extensions]
+      typographer = true
+      table = true
+      strikethrough = true
+      linkify = true
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  url  = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Work"
+  url  = "/work/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Blog"
+  url  = "/blog/"
+  weight = 3
+
+  [[menu.main]]
+  name = "About"
+  url  = "/about/"
+  weight = 4

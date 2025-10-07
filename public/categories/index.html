@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+      Categories | patterned.by.adrianne
+    
+  </title>
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+  
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+  
+  <meta name="generator" content="Hugo 0.138.0">
+</head>
+  </head>
+  <body class="text-gray-900 bg-indigo-50">
+    
+    
+  <div class="flex">
+    
+    <aside class="w-64 p-6 bg-gradient-to-b from-lavender-200 to-indigo-100">
+      <aside class="fixed top-0 left-0 z-50 flex flex-col items-center w-56 h-screen p-6 bg-purple-300">
+  
+  <div class="mb-6 text-center">
+    <p class="text-base text-purple-800 site-title font-heading hover:text-purple-900">
+        patterned.by.adrianne
+    </p>
+    </div>
+
+  <div class="flex-1">
+    
+    <div class="mb-6">
+    
+    <div class="text-center">
+        <img src="/images/author/as_profile.png" alt="Adrianne Padua"
+            class="mx-auto mb-3 border border-purple-300 rounded-full shadow-sm"
+            style="width:90px; height:90px; object-fit:cover;" />
+        <p class="text-base text-purple-900 author-name font-heading">
+          Adrianne Padua
+        </p>
+    </div>
+
+    
+    <p class="px-3 mt-2 text-xs leading-snug text-left text-purple-800">
+        Data-loving creative. Prompt engineer. Site builder.  
+        I work with vibes, ethics, and lavender themes 💜
+    </p>
+    </div>
+
+    
+    <hr class="my-4 border-purple-300">
+
+    
+    <nav class="mb-6">
+      <ul class="space-y-2">
+        
+          <li>
+            <a href="/" class="block px-3 py-2 rounded hover:bg-purple-200 hover:underline ">
+              Home
+            </a>
+          </li>
+        
+          <li>
+            <a href="/work/" class="block px-3 py-2 rounded hover:bg-purple-200 hover:underline ">
+              Work
+            </a>
+          </li>
+        
+          <li>
+            <a href="/blog/" class="block px-3 py-2 rounded hover:bg-purple-200 hover:underline ">
+              Blog
+            </a>
+          </li>
+        
+          <li>
+            <a href="/about/" class="block px-3 py-2 rounded hover:bg-purple-200 hover:underline ">
+              About
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div class="flex mb-4 space-x-3 social-links">
+    <a href="https://github.com/adriculous" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/adrianne-padua" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://x.com/adriculous" target="_blank" aria-label="Twitter">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://bsky.app/profile/adrianne.io" target="_blank" aria-label="Bluesky">
+      <i class="fa-brands fa-bluesky"></i>
+    </a>
+    <a href="https://www.kaggle.com/adripad" target="_blank" aria-label="Kaggle">
+      <i class="fa-brands fa-kaggle"></i>
+    </a>
+  </div>
+
+    
+    <div class="mt-auto">
+        <footer class="p-2 text-center" style="font-size: 0.75rem; color: #3b0764;">
+  &copy; 2025 <a href="https://adrianne.me" target="_blank" title="index.adrianne">Adrianne Padua</a><br>
+  [<a href="https://github.com/adriculous/data.adrianne.io/changelog.md" target="_blank" title="Changelog"><strong>Changelog</strong></a> | <a href="https://adrianne.me/privacy" target="_blank" title="Privacy & GDPR Notice"><strong>Privacy</strong></a>]
+</footer>
+    </div>
+</aside>
+
+    </aside>
+
+    
+      <main id="content" class="flex-1 p-6">
+
+        
+<main class="py-8 mx-auto prose">
+  <h1>Categories</h1>
+  
+  <ul>
+    
+  </ul>
+</main>
+
+      </main>
+  </div>
+
+    <script src="/js/main.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      
+      cards.forEach(card => {
+        if (filter === "all" || card.getAttribute("data-category") === filter) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      
+      buttons.forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on patterned.by.adrianne</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on patterned.by.adrianne</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rebuilding My Data Analytics Portfolio</title>
+      <link>http://localhost:1313/blog/portfolio-move/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/portfolio-move/</guid>
+      <description>&lt;p&gt;For the longest time, &lt;strong&gt;adrianne.io&lt;/strong&gt; didn’t have anything on it. I first purchased the domain intending it to become my new portfolio, but real life happened, and I never had the time or motivation to build it out. It was originally going to be my web development portfolio. However, I eventually found a different path.&lt;/p&gt;&#xA;&lt;p&gt;In 2023, I decided to shift from web development to data analytics. Thanks to my employer’s education benefit, I enrolled in courses and discovered that data analysts (and data scientists) were also expected to have portfolios. I wasn’t ready for that yet, but rather than relying on a free-hosted, pre-built site, I used a pre-made HTML template and temporarily hosted it at &lt;strong&gt;adrianne.io&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

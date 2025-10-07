@@ -1,0 +1,34 @@
+{{ define "main" }}
+<section class="py-16 bg-gray-50">
+  <div class="container px-4 mx-auto">
+    <h1 class="mb-4 text-4xl font-bold text-center text-purple-800">Blog</h1>
+    <p class="max-w-2xl mx-auto mb-8 text-lg text-center text-gray-600">
+      Thoughts, case studies, and reflections on data, AI, and creativity.
+    </p>
+
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      {{ range .Pages }}
+        <article class="overflow-hidden bg-white rounded-lg shadow">
+          <a href="{{ .RelPermalink }}">
+            {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="object-cover w-full h-48">
+            {{ else }}
+                <img src="{{ `images/bunny-placeholder.png` | relURL }}" alt="No image available" class="object-cover w-full h-48">
+            {{ end }}
+            <div class="p-4">
+              <h2 class="mb-2 text-xl font-semibold text-purple-700">{{ .Title }}</h2>
+              <p class="text-gray-600">
+                {{ with .Params.description }}
+                  {{ . }}
+                {{ else }}
+                  {{ .Summary | truncate 120 }}
+                {{ end }}
+              </p>
+            </div>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

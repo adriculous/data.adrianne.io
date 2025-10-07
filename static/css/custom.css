@@ -1,0 +1,10 @@
+/* === Custom overrides === */
+
+.logo-text {
+  font-family: 'Special Elite', cursive;
+}
+
+/* Example: make all body text IBM Plex Mono */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}

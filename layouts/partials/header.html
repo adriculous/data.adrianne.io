@@ -1,0 +1,10 @@
+<header class="p-6 bg-gray-100 border-b">
+  <div class="flex items-center justify-between max-w-6xl mx-auto">
+    <a href="{{ "/" | relURL }}" class="text-2xl font-bold">{{ .Site.Title }}</a>
+    <nav class="space-x-4">
+      <a href="{{ "/" | relURL }}" class="hover:underline">Home</a>
+      <a href="{{ "/portfolio/" | relURL }}" class="hover:underline">Portfolio</a>
+      <a href="{{ "/about/" | relURL }}" class="hover:underline">About</a>
+    </nav>
+  </div>
+</header>
