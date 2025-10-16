@@ -13,17 +13,16 @@
         </video>
       </section>
     {{ end }}
-  <div class="flex">
+  <div class="flex flex-col md:flex-row">
     <!-- Sidebar -->
-    <aside class="w-64 p-6 bg-gradient-to-b from-lavender-200 to-indigo-100">
+    <aside id="sidebar" class="fixed top-0 left-0 z-50 w-full h-full p-6 transition-transform duration-300 ease-in-out transform -translate-x-full md:w-64 bg-gradient-to-b from-lavender-200 to-indigo-100 md:static md:h-auto md:translate-x-0">
       {{ partial "sidebar.html" . }}
     </aside>
 
     <!-- Main content -->
-      <main id="content" class="flex-1 p-6">
-
-        {{ block "main" . }}{{ end }}
-      </main>
+    <main id="content" class="flex-1 p-6 md:ml-64">
+      {{ block "main" . }}{{ end }}
+    </main>
   </div>
 
     {{ partial "scripts.html" . }}
