@@ -1,53 +1,36 @@
-
-<!-- Mobile Toggle Button (forced visible fix) -->
-<div class="fixed pointer-events-auto top-5 left-5 md:hidden" style="z-index: 2147483647;">
-  <button
-    id="sidebar-toggle"
-    class="p-2 text-white transition bg-purple-700 rounded shadow-lg hover:bg-purple-800 shadow-purple-400/40 focus:outline-none focus:ring-2 focus:ring-purple-400"
-    aria-label="Toggle sidebar"
-  >
-    <i class="text-lg fa-solid fa-bars"></i>
-  </button>
-</div>
-
-<!-- Overlay for mobile -->
-<div
-  id="sidebar-overlay"
-  class="fixed inset-0 z-40 hidden bg-black opacity-50 md:hidden"
-></div>
-
-<!-- Sidebar -->
-<aside
-  id="sidebar"
-  class="fixed top-0 left-0 z-50 flex flex-col items-center w-56 h-screen p-6 transition-transform duration-300 ease-in-out transform -translate-x-full bg-purple-300 md:static md:translate-x-0"
->
+<aside class="fixed top-0 left-0 z-50 flex flex-col items-center w-56 h-screen p-6 bg-purple-300">
   <!-- Site logo -->
   <div class="mb-6 text-center">
     <p class="text-base text-purple-800 site-title font-heading hover:text-purple-900">
         {{ .Site.Title }}
     </p>
-  </div>
+    </div>
 
-  <div class="flex-1 overflow-y-auto">
+  <div class="flex-1">
     <!-- Profile -->
-    <div class="mb-6 text-center">
-      <img src="/images/author/as_profile.png" alt="Adrianne Padua"
-          class="mx-auto mb-3 border border-purple-300 rounded-full shadow-sm"
-          style="width:90px; height:90px; object-fit:cover;" />
-      <p class="text-base text-purple-900 author-name font-heading">
-        Adrianne Padua
-      </p>
-      <p class="px-3 mt-2 text-xs leading-snug text-purple-800">
-          Data-loving creative. Prompt engineer. Site builder.  
-          I work with vibes, ethics, and lavender themes 💜
-      </p>
+    <div class="mb-6">
+    <!-- Avatar -->
+    <div class="text-center">
+        <img src="/images/author/as_profile.png" alt="Adrianne Padua"
+            class="mx-auto mb-3 border border-purple-300 rounded-full shadow-sm"
+            style="width:90px; height:90px; object-fit:cover;" />
+        <p class="text-base text-purple-900 author-name font-heading">
+          Adrianne Padua
+        </p>
+    </div>
+
+    <!-- Description (left-aligned, smaller, darker) -->
+    <p class="px-3 mt-2 text-xs leading-snug text-left text-purple-800">
+        Data-loving creative. Prompt engineer. Site builder.  
+        I work with vibes, ethics, and lavender themes 💜
+    </p>
     </div>
 
     <!-- Divider -->
     <hr class="my-4 border-purple-300">
 
     <!-- Nav (dynamic from hugo.toml) -->
-    <nav class="w-full mb-6">
+    <nav class="mb-6">
       <ul class="space-y-2">
         {{ range .Site.Menus.main }}
           <li>
@@ -62,26 +45,25 @@
 
   <!-- Social Links -->
   <div class="flex mb-4 space-x-3 social-links">
-    <a href="https://github.com/adriculous" target="_blank" aria-label="GitHub" class="hover:text-purple-900">
+    <a href="https://github.com/adriculous" target="_blank" aria-label="GitHub">
       <i class="fa-brands fa-github"></i>
     </a>
-    <a href="https://linkedin.com/in/adrianne-padua" target="_blank" aria-label="LinkedIn" class="hover:text-purple-900">
+    <a href="https://linkedin.com/in/adrianne-padua" target="_blank" aria-label="LinkedIn">
       <i class="fa-brands fa-linkedin"></i>
     </a>
-    <a href="https://x.com/adriculous" target="_blank" aria-label="Twitter" class="hover:text-purple-900">
+    <a href="https://x.com/adriculous" target="_blank" aria-label="Twitter">
       <i class="fa-brands fa-x-twitter"></i>
     </a>
-    <a href="https://bsky.app/profile/adrianne.io" target="_blank" aria-label="Bluesky" class="hover:text-purple-900">
+    <a href="https://bsky.app/profile/adrianne.io" target="_blank" aria-label="Bluesky">
       <i class="fa-brands fa-bluesky"></i>
     </a>
-    <a href="https://www.kaggle.com/adripad" target="_blank" aria-label="Kaggle" class="hover:text-purple-900">
+    <a href="https://www.kaggle.com/adripad" target="_blank" aria-label="Kaggle">
       <i class="fa-brands fa-kaggle"></i>
     </a>
   </div>
 
-  <!-- Footer -->
-  <div class="mt-auto">
-      {{ partial "footer.html" . }}
-  </div>
+    <!-- footer -->
+    <div class="mt-auto">
+        {{ partial "footer.html" . }}
+    </div>
 </aside>
-

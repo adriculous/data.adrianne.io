@@ -26,25 +26,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const sidebarToggle = document.getElementById("sidebar-toggle");
-    const sidebar = document.getElementById("sidebar");
-    const overlay = document.getElementById("sidebar-overlay");
-
-    if (sidebarToggle && sidebar && overlay) {
-      sidebarToggle.addEventListener("click", () => {
-        const isHidden = sidebar.classList.contains("-translate-x-full");
-        sidebar.classList.toggle("-translate-x-full", !isHidden);
-        sidebar.classList.toggle("translate-x-0", isHidden);
-        overlay.classList.toggle("hidden", isHidden);
-      });
-
-      overlay.addEventListener("click", () => {
-        sidebar.classList.add("-translate-x-full");
-        sidebar.classList.remove("translate-x-0");
-        overlay.classList.add("hidden");
-      });
-    }
-  });
-</script>

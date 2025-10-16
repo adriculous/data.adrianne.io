@@ -6,36 +6,24 @@
   <body class="text-gray-900 bg-indigo-50">
     <!-- Hero Section -->
     {{ if .IsHome }}
-      <section class="relative w-full h-[250px] md:h-[350px] lg:h-[450px] shadow-lg !m-0 !p-0 z-0 overflow-visible">
+      <section class="relative w-full overflow-hidden h-[250px] md:h-[350px] lg:h-[450px] shadow-lg !m-0 !p-0">
         <video autoplay muted loop playsinline class="absolute inset-0 object-cover w-full h-full !p-0 !m-0">
           <source src="/images/hero/bunny-hero.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
     {{ end }}
-  <div class="flex flex-col md:flex-row">
-    <!-- Mobile Toggle Button (always visible) -->
-<div class="fixed pointer-events-auto top-5 left-5 md:hidden" style="z-index:2147483647;">
-  <button
-    id="sidebar-toggle"
-    class="p-2 text-white transition bg-purple-700 rounded shadow-lg hover:bg-purple-800 shadow-purple-400/40 focus:outline-none focus:ring-2 focus:ring-purple-400"
-    aria-label="Toggle sidebar"
-  >
-    <i class="text-lg fa-solid fa-bars"></i>
-  </button>
-</div>
-
-<!-- Overlay for mobile -->
-<div id="sidebar-overlay" class="fixed inset-0 z-40 hidden bg-black opacity-50 md:hidden"></div>
+  <div class="flex">
     <!-- Sidebar -->
-    <aside id="sidebar" class="fixed top-0 left-0 z-50 w-full h-full p-6 transition-transform duration-300 ease-in-out transform -translate-x-full md:w-64 bg-gradient-to-b from-lavender-200 to-indigo-100 md:static md:h-auto md:translate-x-0">
+    <aside class="w-64 p-6 bg-gradient-to-b from-lavender-200 to-indigo-100">
       {{ partial "sidebar.html" . }}
     </aside>
 
     <!-- Main content -->
-    <main id="content" class="flex-1 p-6 md:ml-64">
-      {{ block "main" . }}{{ end }}
-    </main>
+      <main id="content" class="flex-1 p-6">
+
+        {{ block "main" . }}{{ end }}
+      </main>
   </div>
 
     {{ partial "scripts.html" . }}

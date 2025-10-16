@@ -7,9 +7,7 @@ module.exports = {
     "./themes/**/layouts/**/*.html",
   ],
   safelist: [
-    'bg-bubblegum',
-    'translate-x-0',
-    '-translate-x-full'
+    'bg-bubblegum'
   ],
   theme: {
     extend: {
