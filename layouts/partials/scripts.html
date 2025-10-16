@@ -35,12 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sidebarToggle && sidebar && overlay) {
       sidebarToggle.addEventListener("click", () => {
         const isHidden = sidebar.classList.contains("-translate-x-full");
-        sidebar.classList.toggle("-translate-x-full");
-        overlay.classList.toggle("hidden", !isHidden);
+        sidebar.classList.toggle("-translate-x-full", !isHidden);
+        sidebar.classList.toggle("translate-x-0", isHidden);
+        overlay.classList.toggle("hidden", isHidden);
       });
 
       overlay.addEventListener("click", () => {
         sidebar.classList.add("-translate-x-full");
+        sidebar.classList.remove("translate-x-0");
         overlay.classList.add("hidden");
       });
     }
