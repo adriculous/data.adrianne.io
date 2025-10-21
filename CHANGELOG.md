@@ -8,6 +8,13 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ---
 
+## V.2 - 2025.10.21
+- Redid the layout to horizontal navbar instead of sidebar. It was very difficult to create a toggable sidebar on mobile view after several attempts. I feel that the new layout would be much cleaner, easier to navigate, and will work well on both desktop and mobile views.
+- Added Font Awesome icons on the menu items.
+- Added `Colophon` link in the footer, leading to the main *Colophon* page on *Portal by Adrianne*, instead of creating a separate *Colophon* page.
+
+---
+
 ## V.1.0.1 - 2025.10.06
 - Fixed the URL for the `CHANGELOG` on the sidebar footer.
 - Added a featured image in the blog post **Rebuilding My Data Analytics Portfolio**.

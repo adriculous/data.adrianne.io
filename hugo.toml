@@ -18,20 +18,24 @@ title = "patterned.by.adrianne"
 
   [[menu.main]]
   name = "Home"
-  url  = "/"
+  url = "/"
+  pre = "<i class='fa-solid fa-house-chimney'></i> "
   weight = 1
 
-  [[menu.main]]
+[[menu.main]]
   name = "Work"
-  url  = "/work/"
+  url = "/work/"
+  pre = "<i class='fa-solid fa-briefcase'></i> "
   weight = 2
 
-  [[menu.main]]
+[[menu.main]]
   name = "Blog"
-  url  = "/blog/"
+  url = "/blog/"
+  pre = "<i class='fa-solid fa-pen-nib'></i> "
   weight = 3
 
-  [[menu.main]]
+[[menu.main]]
   name = "About"
-  url  = "/about/"
+  url = "/about/"
+  pre = "<i class='fa-solid fa-user'></i> "
   weight = 4

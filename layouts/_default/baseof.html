@@ -4,6 +4,10 @@
     {{ partial "head.html" . }}
   </head>
   <body class="text-gray-900 bg-indigo-50">
+
+    <!-- Navbar -->
+    {{ partial "navbar.html" . }}
+
     <!-- Hero Section -->
     {{ if .IsHome }}
       <section class="relative w-full overflow-hidden h-[250px] md:h-[350px] lg:h-[450px] shadow-lg !m-0 !p-0">
@@ -13,19 +17,16 @@
         </video>
       </section>
     {{ end }}
-  <div class="flex">
-    <!-- Sidebar -->
-    <aside class="w-64 p-6 bg-gradient-to-b from-lavender-200 to-indigo-100">
-      {{ partial "sidebar.html" . }}
-    </aside>
 
-    <!-- Main content -->
+    <div class="flex">
+    
+      <!-- Main content -->
       <main id="content" class="flex-1 p-6">
-
         {{ block "main" . }}{{ end }}
       </main>
-  </div>
+    </div>
 
     {{ partial "scripts.html" . }}
+    {{ partial "footer.html" . }}
   </body>
 </html>

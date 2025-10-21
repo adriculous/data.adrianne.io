@@ -1,0 +1,45 @@
+<!-- NAVBAR: Patterned by Adrianne (Vanilla Tailwind Version) -->
+<header class="sticky top-0 z-50 bg-gradient-to-r from-[#bca8ff] to-[#a891ff] border-b border-[#a891ff]/40 shadow-sm">
+  <nav class="flex items-center justify-between p-4 mx-auto max-w-7xl lg:px-8" aria-label="Global">
+    <!-- Brand -->
+    <div class="flex items-center flex-1">
+      <a href="/" class="-m-1.5 p-1.5 flex items-center">
+        <span class="sr-only">Patterned by Adrianne</span>
+        <p class="text-lg tracking-wide text-purple-800 logo-text">[ patterned.by.adrianne ]</p>
+      </a>
+    </div>
+
+    <!-- Hamburger toggle (mobile only) -->
+    <div class="flex lg:hidden">
+      <button id="mobile-menu-button" class="inline-flex items-center justify-center rounded-md p-2.5 text-purple-900 hover:text-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 bg-white/80 shadow-sm">
+        <span class="sr-only">Open main menu</span>
+        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="hidden w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden lg:flex lg:gap-x-8">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="text-sm font-semibold text-purple-900 hover:text-purple-700 border-b-2 border-transparent hover:border-[#a891ff] transition-all duration-200">
+          {{ .Pre | safeHTML }}{{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white/90 backdrop-blur-sm border-t border-[#a891ff]/40 shadow-md">
+    <div class="p-4 space-y-2">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="block px-3 py-2 text-base font-semibold text-purple-900 rounded-md hover:bg-purple-200 hover:text-purple-800">
+          {{ .Pre | safeHTML }}{{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</header>
