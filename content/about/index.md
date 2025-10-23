@@ -78,7 +78,7 @@ In this lab, we chase patterns, test ideas, and learn from every dataset that ho
 </div>
 
 <p style="text-align:center">
-  <em>These badges represent my completion of the Google Data Analytics Certificate through the Merit America program — a milestone in my journey toward ethical and creative data storytelling.</em>
+  <em>These badges represent my completion of the Google Data Analytics Certificate through the Merit America program, as well as other specializations related to Data Analytics — a milestone in my journey toward ethical and creative data storytelling.</em>
 </p>
 
 ---
