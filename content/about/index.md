@@ -71,6 +71,10 @@ In this lab, we chase patterns, test ideas, and learn from every dataset that ho
   <a href="https://certopus.com/c/8238e4e68c714516ad258311e858a6f6" target="_blank" rel="noopener">
     <img src="/images/author/credentials/ma_da102023.png" alt="Merit America Data Analytics Badge">
   </a>
+  
+  <a href="https://www.credly.com/badges/2ba11714-f8c4-4f43-a689-92bfa55aff6f" target="_blank" rel="noopener">
+    <img src="/images/author/credentials/google-ai-essentials-v1.png" alt="Google AI Essentials Specialization">
+  </a> 
 </div>
 
 <p style="text-align:center">
