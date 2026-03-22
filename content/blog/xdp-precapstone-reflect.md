@@ -1,7 +1,7 @@
 ---
 title: "What We Don't See: A Pre-Capstone Reflection on XDP"
 date: 2026-03-21
-description: "A pre-capstone reflection on a particular subject no one knows about: X-linked Dystonia Parkinsonism (XDP)".
+description: "A pre-capstone reflection on a particular subject no one knows about: X-linked Dystonia Parkinsonism (XDP)"
 image: /images/blog/xdp-featuredimg.jpeg
 tags: ["xdp", "case study", "data analytics", "rare hereditary diseases", "philippines"]
 ---
