@@ -8,6 +8,11 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ---
 
+## V.2.1 - 2026.03.21
+- Added a new blog entry of a case study idea that I eventually plan on working in the future.
+
+---
+
 ## V.2 - 2025.10.21
 - Redid the layout to horizontal navbar instead of sidebar. It was very difficult to create a toggable sidebar on mobile view after several attempts. I feel that the new layout would be much cleaner, easier to navigate, and will work well on both desktop and mobile views.
 - Added Font Awesome icons on the menu items.
