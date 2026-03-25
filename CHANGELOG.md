@@ -8,6 +8,11 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ---
 
+## V.2.2 - 2026.03.24
+- Added a new credential badge in the *About* section. I recently completed Google Prompting Essentials, which also included a short course on Data Analytics, Visualization, and Presentation using AI.
+
+---
+
 ## V.2.1 - 2026.03.21
 - Added a new blog entry of a case study idea that I eventually plan on working in the future.
 

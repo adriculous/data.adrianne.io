@@ -75,6 +75,11 @@ In this lab, we chase patterns, test ideas, and learn from every dataset that ho
   <a href="https://www.credly.com/badges/2ba11714-f8c4-4f43-a689-92bfa55aff6f" target="_blank" rel="noopener">
     <img src="/images/author/credentials/google-ai-essentials-v1.png" alt="Google AI Essentials Specialization">
   </a> 
+
+  <a href="https://www.credly.com/badges/a1f966cd-531e-4503-b3b2-82b5eaebfca2" target="_blank" rel="noopener">
+    <img src="/images/author/credentials/google-prompting-essentials-v1.png" alt="Google Prompting Essentials Specialization">
+  </a>
+
 </div>
 
 <p style="text-align:center">
