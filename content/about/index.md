@@ -77,7 +77,7 @@ In this lab, we chase patterns, test ideas, and learn from every dataset that ho
   </a> 
 
   <a href="https://www.credly.com/badges/a1f966cd-531e-4503-b3b2-82b5eaebfca2" target="_blank" rel="noopener">
-    <img src="/images/author/credentials/google-prompting-essentials-v1.png" alt="Google Prompting Essentials Specialization">
+    <img src="/images/author/credentials/google-prompting-essentials.1.png" alt="Google Prompting Essentials Specialization">
   </a>
 
 </div>
