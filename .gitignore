@@ -1,0 +1,11 @@
+# Hugo build output
+/public/
+
+# OS files
+.DS_Store
+
+# Node (if ever used)
+node_modules/
+
+# Logs
+*.log

@@ -11,7 +11,8 @@
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="cleaning">Cleaning</button>
       <button class="filter-btn" data-filter="visuals">Visuals</button>
-      <button class="filter-btn" data-filter="capstone">Capstones</button>
+      <button class="filter-btn" data-filter="sql">SQL</button>
+      <button class="filter-btn" data-filter="case-study">Case Studies</button>
     </div>
 
     <!-- Project Grid -->
@@ -28,7 +29,11 @@
             <div class="p-4">
               <h3 class="mb-2 text-lg font-semibold text-purple-700">{{ .Title }}</h3>
               <p class="mb-4 text-gray-700">{{ .Description }}</p>
-              <span class="text-purple-600 hover:underline">View case study →</span>
+              {{ if eq $category "case-study" }}
+                <span class="text-purple-600 hover:underline">View case study →</span>
+              {{ else }}
+                <span class="text-purple-600 hover:underline">View project →</span>
+              {{ end }}
             </div>
           </a>
         </div>
