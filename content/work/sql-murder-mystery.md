@@ -16,8 +16,6 @@ skills:
   - Evidence-based analysis
 ---
 
-# SQL Murder Mystery
-
 ## Overview
 I approached **SQL Murder Mystery** as a real-world data investigation, using SQL to identify a murderer and uncover the mastermind behind the crime.
 
