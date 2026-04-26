@@ -8,6 +8,14 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ---
 
+## V.2.3 - 2026.04.25
+
+## Added
+- Added a new filter tag for SQL 
+- Added a new project report for [SQL Murder Mystsery](https://mystsery.knightlab.com). This will be my first SQL-related project report.
+
+---
+
 ## V.2.2 - 2026.03.24
 - Added a new credential badge in the *About* section. I recently completed Google Prompting Essentials, which also included a short course on Data Analytics, Visualization, and Presentation using AI.
 
