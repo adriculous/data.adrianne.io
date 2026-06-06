@@ -8,6 +8,16 @@ This project adheres to [semantic versioning](https://semver.org/) for a clearer
 
 ---
 
+## v.2.5 - 2026-06.05
+
+- Added `static/sync-patterned.mjs` to synchronize content from a headless WordPress CMS into Hugo-compatible Markdown files.
+- Added support for Work and Blog posts.
+- Automatically generates Hugo frontmatter, categories, tags, featured images, excerpts, and metadata from WordPress content.
+- Established the content publishing workflow for Patterned by Adrianne.
+- Laid the groundwork for future integration with additional sites in the Adrianne portfolio ecosystem.
+
+---
+
 ## v.2.4 - 2026.04.26
 
 - Added [SQL Noir](https://www.sqlnoir.com) project series
